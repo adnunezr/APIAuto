@@ -1,0 +1,1 @@
+curl "https://api.todoist.com/rest/v2/tasks" -X POST --data "{"content": "Walk 10min"}" -H "Authorization: Bearer %token%" -H "Content-Type: application/json"

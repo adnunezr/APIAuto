@@ -1,0 +1,5 @@
+curl "https://api.todoist.com/rest/v2/tasks/%id_task%" -X POST --Data "{"priority": 1}" -H "Authorization: Bearer %token%"
+At least one of supported fields should be set and non-empty
+
+
+Por alguna razon me sigue diciendo que le de algun valor, pero no entiendo que pasa aqui que le estoy dando un valor nuevo y simplemente me dice que algun valor soportado deberia estar set

@@ -1,0 +1,54 @@
+curl -X POST "https://api.todoist.com/rest/v2/tasks/%id_task%/close" -H "Authorization: Bearer %token%"
+
+No hay respuesta pero la task se ha cerrado un ejemplo seria
+
+                "id": "7240884548",
+                "assigner_id": null,
+                "assignee_id": null,
+                "project_id": "2319574721",
+                "section_id": "134041720",
+                "parent_id": null,
+                "order": 3,
+                "content": "Something",
+                "description": "",
+                "is_completed": false,
+                "labels": [],
+                "priority": 1,
+                "comment_count": 0,
+                "creator_id": "45681270",
+                "created_at": "2023-09-19T01:45:18.640807Z",
+                "due": null,
+                "url": "https://todoist.com/showTask?id=7240884548",
+                "duration": null
+
+       curl -X POST "https://api.todoist.com/rest/v2/tasks/7240884548/close" -H "Authorization: Bearer %token%" 
+
+       Lo que se obtiene es 
+
+               {
+                "id": "7240884548",
+                "assigner_id": null,
+                "assignee_id": null,
+                "project_id": "2319574721",
+                "section_id": "134041720",
+                "parent_id": null,
+                "order": 3,
+                "content": "Something",
+                "description": "",
+                "is_completed": false,
+                "labels": [],
+                "priority": 1,
+                "comment_count": 0,
+                "creator_id": "45681270",
+                "created_at": "2023-09-19T01:45:18.640807Z",
+                "due": null,
+                "url": "https://todoist.com/showTask?id=7240884548",
+                "duration": null
+        }
+
+C:\Users\User>curl -X POST "https://api.todoist.com/rest/v2/tasks/7240884548/close" -H "Authorization: Bearer %token%"
+
+C:\Users\User>
+
+Vacio pero la tarea deja de existir
+    
