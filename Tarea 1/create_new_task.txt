@@ -1,1 +1,29 @@
-curl "https://api.todoist.com/rest/v2/tasks" -X POST --data "{"content": "Walk 10min"}" -H "Authorization: Bearer %token%" -H "Content-Type: application/json"
+C:\Users\User\APIAuto\Tarea 1>curl "https://api.todoist.com/rest/v2/tasks" -X POST --data @Create_task.json -H "Content-Type: application/json" -H "Authorization: Bearer %token%"
+{
+        "id": "7240936595",
+        "assigner_id": null,
+        "assignee_id": null,
+        "project_id": "2319574712",
+        "section_id": null,
+        "parent_id": null,
+        "order": 4,
+        "content": "New Task",
+        "description": "",
+        "is_completed": false,
+        "labels": [],
+        "priority": 2,
+        "comment_count": 0,
+        "creator_id": "45681270",
+        "created_at": "2023-09-19T02:20:29.635637Z",
+        "due": {
+                "date": "2023-09-19",
+                "string": "tomorrow at 10:00",
+                "lang": "en",
+                "is_recurring": false,
+                "datetime": "2023-09-19T10:00:00"
+        },
+        "url": "https://todoist.com/showTask?id=7240936595",
+        "duration": null
+}
+
+Creting a new task with the only needed value which is content

@@ -1,0 +1,58 @@
+C:\Users\User\APIAuto\Tarea 1>curl "https://api.todoist.com/rest/v2/tasks/7240928696" -X POST --data @Create_task.json -H "Content-Type: application/json" -H "Authorization: Bearer %token%"
+{
+        "id": "7240928696",
+        "assigner_id": null,
+        "assignee_id": null,
+        "project_id": "2319574712",
+        "section_id": null,
+        "parent_id": null,
+        "order": 3,
+        "content": "Walking",
+        "description": "",
+        "is_completed": false,
+        "labels": [],
+        "priority": 4,
+        "comment_count": 0,
+        "creator_id": "45681270",
+        "created_at": "2023-09-19T02:14:38.580203Z",
+        "due": {
+                "date": "2023-09-19",
+                "string": "tomorrow at 12:00",
+                "lang": "en",
+                "is_recurring": false,
+                "datetime": "2023-09-19T12:00:00"
+        },
+        "url": "https://todoist.com/showTask?id=7240928696",
+        "duration": null
+}
+
+C:\Users\User\APIAuto\Tarea 1>curl "https://api.todoist.com/rest/v2/tasks/7240928696" -X POST --data @Create_task.json -H "Content-Type: application/json" -H "Authorization: Bearer %token%"
+{
+        "id": "7240928696",
+        "assigner_id": null,
+        "assignee_id": null,
+        "project_id": "2319574712",
+        "section_id": null,
+        "parent_id": null,
+        "order": 3,
+        "content": "Walking updated",
+        "description": "",
+        "is_completed": false,
+        "labels": [],
+        "priority": 4,
+        "comment_count": 0,
+        "creator_id": "45681270",
+        "created_at": "2023-09-19T02:14:38.580203Z",
+        "due": {
+                "date": "2023-09-19",
+                "string": "tomorrow at 12:00",
+                "lang": "en",
+                "is_recurring": false,
+                "datetime": "2023-09-19T12:00:00"
+        },
+        "url": "https://todoist.com/showTask?id=7240928696",
+        "duration": null
+}
+
+
+Aqui se actualizo el contet de Walking to Walking updated;
